@@ -3,7 +3,7 @@
     .section .text.init
     .globl _start
 _start:
-    lui  x10, 0x1
+    addi x10, x0, 0x400
     lui  x5, 0x80820
     addi x5, x5, -129
     sw   x5, 0(x10)
